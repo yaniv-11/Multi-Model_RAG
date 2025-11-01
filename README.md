@@ -4,7 +4,6 @@ This project implements a Multimodal Retrieval-Augmented Generation (RAG) system
 
 It uses hybrid retrieval (semantic + keyword), vision-based OCR, and FastAPI for API deployment — designed to impress recruiters by going beyond a basic RAG system.
 
- Architecture Overview
                 ┌─────────────────────────────┐
                 │        User / Client        │
                 │  (Frontend or API Request)  │
@@ -47,6 +46,7 @@ It uses hybrid retrieval (semantic + keyword), vision-based OCR, and FastAPI for
                      │(Context-aware│
                      │ response gen)│
                      └──────────────┘
+
 
 ⚙️ Features Implemented
 
@@ -102,7 +102,6 @@ Hybrid Search	BM25 + dense similarity
 Async Processing	asyncio + FastAPI background tasks
 Caching	functools.lru_cache
 LLM	(Placeholder for any open-source model like Llama-3 or Mistral)
-🧱 Folder Structure
 multimodal_rag/
 │
 ├── src/
@@ -125,6 +124,7 @@ multimodal_rag/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
+
 
 
 🧠 API Documentation
