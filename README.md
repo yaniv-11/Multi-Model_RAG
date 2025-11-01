@@ -49,27 +49,48 @@ It uses hybrid retrieval (semantic + keyword), vision-based OCR, and FastAPI for
                      └──────────────┘
 
 ⚙️ Features Implemented
+
 ✅ Core Functionalities
+
 Requirement	Implementation
-Text, PDF, and Image ingestion	✅ Supported via OCR and text extraction
-Mixed content PDFs	✅ Handled with text + image processing
-OCR for images	✅ Implemented using pytesseract
-Vector database	✅ ChromaDB used for embeddings
-Metadata tracking	✅ File name, type, and timestamp
-Query types	✅ Factual, exploratory, and cross-modal queries
-Retrieval strategies	✅ Hybrid: semantic (dense) + keyword (sparse) search
-API backend	✅ FastAPI
+
+Text, PDF, and Image ingestion	
+✅ Supported via OCR and text extraction
+Mixed content PDFs
+✅ Handled with text + image processing
+OCR for image
+✅ Implemented using pytesseract
+Vector database	
+✅ ChromaDB used for embeddings
+Metadata tracking
+✅ File name, type, and timestamp
+Query type
+	✅ Factual, exploratory, and cross-modal queries
+Retrieval strategies	
+✅ Hybrid: semantic (dense) + keyword (sparse) search
+API backend	
+✅ FastAPI
 💡 Bonus Features 
 Feature	Description
+
 Hybrid Search	Combines semantic similarity + keyword relevance using BM25.
+
 Graph-aware Contextual Retrieval (GraphRAG-ready)	Links document relations (e.g., text ↔ image in same PDF).
+
 Async Ingestion	Speeds up file uploads and processing.
+
 Caching Layer	Frequently queried documents are cached for faster response.
+
 Chunking Optimization	Dynamically chunked by semantic boundaries.
+
 Source Attribution	Each answer includes source file metadata.
+
 LLM Traceability & Guardrails	Logs context sources for transparency.
+
 Ready for Expansion	Extendable to DOCX/XLSX, multilingual OCR, etc.
+
 🧩 Tech Stack
+
 Layer	Tool / Library
 API Framework	FastAPI
 Embedding Model	sentence-transformers/all-MiniLM-L6-v2
